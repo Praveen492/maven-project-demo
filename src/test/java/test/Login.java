@@ -14,4 +14,13 @@ public class Login extends BaseTest{
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.id("pass")).sendKeys(password);
 	}
+	
+	@Test
+	public void invalidUsernameValidPasswordTest() {
+		String username = "dan@gmail.com";
+		String password = "test1234";
+
+		driver.findElement(By.id("email")).sendKeys(username);
+		driver.findElement(By.id("pass")).sendKeys(password);
+	}
 }
