@@ -41,4 +41,21 @@ public class Login extends BaseTest{
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.id("pass")).sendKeys(password);
 	}
+	
+	//from b1
+	@Test
+	public void blankUsernamblankPasswordTest() {
+		String username = "";
+		String password = "";
+
+		driver.findElement(By.id("email")).sendKeys(username);
+		driver.findElement(By.id("pass")).sendKeys(password);
+	}
+	
+	
+	
+	
+	
+	
+	
 }
